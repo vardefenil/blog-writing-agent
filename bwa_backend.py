@@ -22,6 +22,7 @@ load_dotenv()
 # Blog Writer (Router → (Research?) → Orchestrator → Workers → ReducerWithImages)
 # Patches image capability using your 3-node reducer flow:
 #   merge_content -> decide_images -> generate_and_place_images
+
 # ============================================================
 
 
@@ -111,7 +112,7 @@ class State(TypedDict):
 
 
 # -----------------------------
-# 2) LLM
+# 2) LLM-we can use gemini also
 # -----------------------------
 llm = ChatOpenAI(model="gpt-4.1-mini")
 
